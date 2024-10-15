@@ -4,59 +4,118 @@
     <meta charset="UTF-8">
     <title>Parcticar Taules</title>
     <style>
+        body{
+            font-family: Verdana;
+        }
         td, th {
             border: 1px solid black;
+        }
+        #verde {
+            background-color: lightgreen;
+        }
+        #descans{
+            padding: 15px;
+            font-size: 20px;
+        }
+        .hora{
+            font-size: 20px;
+            padding: 10px;
+            width: 180px;
+        }
+        .capçelera{
+            padding: 30px;
+            font-size: 25px;
+        }
+        table{
             text-align: center;
+            border: 1px solid black;
+            border-collapse:collapse;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #LMSGI{
+            background-color: lightpink;
+        }
+        .P{
+            background-color: lightslategray;
+        }
+        .IPO{
+            background-color: red;
+        }
+        .BD{
+            background-color: lightyellow;
+        }
+        #TUT{
+           background-color: dodgerblue; 
+        }
+        #DIW{
+            background-color: lightsalmon;
+        }
+        #AN{
+            background-color: gold;
+        }
+        .SI{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        caption{
+            text-align: center;
+            color: gold;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <table style="border: 1px solid black; border-collapse:collapse; width: 1200px;">
-        <tr>
-            <td style="width: 150px;"></td>
-            <td style="width: 200px;"><b>Dilluns</b></td>
-            <td style="width: 200px;"><b>Dimarts</b></td>
-            <td style="width: 200px;"><b>Dimecres</b></td>
-            <td style="width: 200px;"><b>Dijous</b></td>
-            <td style="width: 200px;"><b>Divendres</b></td>
+    <h1>Horari</h1>
+    <table>
+        <caption>Curs 24-25</caption>
+        <tr id="verde">
+            <td class="capçelera"></td>
+            <td class="capçelera"><b>dilluns</b></td>
+            <td class="capçelera"><b>dimarts</b></td>
+            <td class="capçelera"><b>dimecres</b></td>
+            <td class="capçelera"><b>dijous</b></td>
+            <td class="capçelera"><b>divendres</b></td>
         </tr>
         <tr>
-            <td style="text-align: left; wid">8:00 - 9:00</td>
-            <td rowspan="2" style="background-color: blueviolet;">LMSGI</td>
-            <td rowspan="2" style="background-color: orange;">BD</td>
-            <td rowspan="2" style="background-color: greenyellow;">P+ED</td>
-            <td rowspan="2" style="background-color: fuchsia;">SI</td>
-            <td rowspan="2" style="background-color: yellow;">BD</td>
+            <td class="hora">8:00 - 9:00</td>
+            <td rowspan="2" id="LMSGI">LMSGI</td>
+            <td rowspan="2" class="BD">BD</td>
+            <td rowspan="2" class="P">P+ED</td>
+            <td rowspan="2" class="SI">SI</td>
+            <td rowspan="2" class="BD">BD</td>
         </tr>
         <tr>
-            <td style="text-align: left;">9:00 - 10:00</td>
+            <td class="hora">9:00 - 10:00</td>
 
         </tr>
         <tr>
-            <td style="text-align: left;">10:00 - 11:00</td>
-            <td style="background-color: greenyellow;">P+ED</td>
-            <td style="background-color: green;">TUT</td>
-            <td style="background-color: brown;">AN</td>
-            <td style="background-color: greenyellow;">P+ED</td>
-            <td style="background-color: greenyellow;">P+ED</td>
+            <td class="hora">10:00 - 11:00</td>
+            <td class="P">P+ED</td>
+            <td id="TUT">TUT</td>
+            <td id="AN">AN</td>
+            <td class="P">P+ED</td>
+            <td class="P">P+ED</td>
         </tr>
         <tr>
-            <td style="text-align: left;">Descans</td>
-            <td colspan="5"></td>
+            <td id="descans" colspan="6">Descans</td>
         </tr>
         <tr>
-            <td style="text-align: left;">11:30 - 12:30</td>
-            <td style="background-color: greenyellow;">P+ED</td>
-            <td rowspan="2" style="background-color: lightgreen;">DIW</td>
-            <td rowspan="2" style="background-color: aqua;">IPOI</td>
-            <td style="background-color: greenyellow;">P+ED</td>
-            <td style="background-color: greenyellow;">P+ED</td>
+            <td class="hora">11:30 - 12:30</td>
+            <td class="P">P+ED</td>
+            <td rowspan="2" id="DIW">DIW</td>
+            <td rowspan="2" class="IPO">IPO I</td>
+            <td rowspan="2" class="P">P+ED</td>
+            <td class="P">P+ED</td>
         </tr>
         <tr>
-            <td style="text-align: left;">12:30 - 13:30</td>
-            <td style="background-color: aqua;">IPOI</td>
-            <td style="background-color: brown;">AN</td>
-            <td style="background-color: fuchsia;">SI</td>
+            <td class="hora">12:30 - 13:30</td>
+            <td class="IPO">IPO I</td>
+            <td class="SI">SI</td>
         </tr>
     </table>
 </body>
